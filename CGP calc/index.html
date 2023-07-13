@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indesx.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="calculator-box">
+    <h1>CGPA Calculator</h1>
+
+    <div class="course-grader">
+        <form class="key-0">
+            <strong><label id="course-row" for="courses">Courses</label></strong>
+            <strong><label id="course-row" for="courses">Credit Units</label></strong>
+            <strong><label id="course-row" for="courses">Grades</label></strong>
+
+            <input type="text" placeholder="course code" class="course key-0" required>
+
+            <input type="number" class="credit-units key-0" placeholder="credit units" value="" required>
+
+            <select class="grade key-0" required>
+                <option class="grade" value="select">Select</option>
+                <option class="grade" value="5">A</option>
+                <option class="grade" value="4">B</option>
+                <option class="grade" value="3">C</option>
+                <option class="grade" value="2">D</option>
+                <option class="grade" value="1">E</option>
+                <option class="grade" value="0">F</option>
+            </select>
+        </form>
+    </div>
+    <div class="btn">
+        <button onclick="addCourse()" >+Add Course</button>
+        <button onclick="removeCourse()" >-Remove Course</button>
+        <button onclick="calcCgp()" >+Calculate CGPA</button>
+
+    </div>
+    <div class="lastp">
+        <p id="cgpa-calc">Your CGPA is: </p>
+
+    </div>
+  </div>  
+
+  <script src="./js.js"></script>
+</body>
+</html>
